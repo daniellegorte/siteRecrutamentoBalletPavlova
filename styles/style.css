@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --texto-destaque: #4f2621;
+    --cor-texto: #3D0301;
+    --texto-terciario: #ffecec;
+    --cor-fundo: #fbdbdc;
+}
+
+body {
+    padding: 20px;
+    height: 100vh;
+    background-color: var(--cor-fundo);
+    font-family: "Inter", sans-serif;
+}
+
+.cabecalho__paginas {
+    display: flex;
+    gap: 35px;
+    font-size: 15px;
+    margin-left: 5%;
+}
+
+.cabecalho__paginas a {
+    color: var(--cor-texto);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.cabecalho__paginas a:visited {
+    color: var(--cor-texto);
+}
+
+.cabecalho__paginas a:hover {
+    color: var(--texto-destaque);
+}
+
+.assinatura{
+    text-decoration: none;
+    color: black;
+}
+.paginaInicial {
+    margin: 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.paginaInicialTextos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paginaInicialTextos__titulo {
+    color: var(--texto-destaque);
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.paginaInicialTextos__paragrafo {
+    color: var(--cor-texto);
+}
+
+strong {
+    font-style: italic;
+}
+
+.paginaInicialTextos__queroSer {
+    margin-top: 2%;
+    display: flex;
+    gap: 50px;
+}
+
+.paginaInicialTextos__queroSer__botao {
+    color: var(--texto-terciario);
+    text-decoration: none;
+    border: solid 2px var(--texto-destaque);
+    border-radius: 8px;
+    background-color: var(--texto-destaque);
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.paginaInicialTextos__queroSer__botao:hover {
+    background-color: var(--cor-texto);
+    border-color: var(--cor-texto);
+}
+
+.rodape {
+    margin: 5%;
+    display: flex;
+    gap: 20px;
+}
