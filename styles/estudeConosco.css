@@ -71,8 +71,15 @@ body {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     font-size: 20px;
+}
+
+.label{
+    color: var(--texto-destaque);
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
 }
 
 .curriculo__informacao {
@@ -86,12 +93,18 @@ body {
     font-size: 15px;
 }
 
-.curriculo_enviar {
+.curriculo__botoes{
+    display: flex;
+    flex-direction: row;
+    gap: 260px;
+}
+.curriculo_botoes__botao{
     color: var(--texto-primario);
     background-color: var(--texto-destaque);
     border: solid 2px var(--texto-destaque);
     border-radius: 8px;
-    padding: 10px;
+    margin: 20px 0 0 0;
+    padding: 20px;
     font-weight: bold;
     width: 130px;
     cursor: pointer;

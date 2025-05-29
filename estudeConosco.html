@@ -24,14 +24,23 @@
             <h1 class="paginaInicialTextos__titulo"> Seja aluna do Ballet Pavlova! </h1>
             <p class="paginaInicialTextos__paragrafo"> Envie os seus dados para que possamos entrar em contato! </p>
             <br>
-            <div class="curriculo">
-                <p class="curriculo__informacao"> *Email: </p>
-                <p class="curriculo__informacao"> *Número de Whatsapp: </p>
-                <p class="curriculo__informacao"> *Idade: </p>
-                <p class="curriculo__informacao"> *Gênero:</p>
-                <p class="curriculo__informacao"> Já foi aluna (o) de Ballet?:</p>
-                <button class="curriculo_enviar" type="button" onclick="alert('Obrigada pelo interesse ♡ Entraremos em contato o mais breve possível!')"> Enviar dados </button>
-            </div>
+            <form>
+                <div class="curriculo">
+                    <label for="email" class="label"> Email: </label>
+                    <input type="email" class="curriculo__informacao" id="email" name="email" value="Digite o seu email">
+                    <label for="idade" class="label"> Idade: </label>
+                    <input type="number" class="curriculo__informacao" id="idade" name="idade">
+                    <label for="genero"class="label"> Genero: </label>
+                    <input type="text" class="curriculo__informacao" id="genero" name="genero" value="Responda com Feminino ou Masculino">
+                    <label for="aluna" class="label"> Ja foi aluna(o) de Ballet?: </label>
+                    <input type="text" class="curriculo__informacao" id="aluna" name="aluna" value="Responda com Sim ou Não">
+                    <div class="curriculo__botoes">
+                        <input type="submit" class="curriculo_botoes__botao" value="Enviar dados"> 
+                        <input type="reset" class="curriculo_botoes__botao" value="Limpar dados">
+                    </div>
+                </div>
+            </form>
+            
             
 
         </Section> 
