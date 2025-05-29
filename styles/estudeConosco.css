@@ -98,6 +98,7 @@ body {
     flex-direction: row;
     gap: 260px;
 }
+
 .curriculo_botoes__botao{
     color: var(--texto-primario);
     background-color: var(--texto-destaque);
